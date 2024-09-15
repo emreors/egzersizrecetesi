@@ -27,10 +27,8 @@
       <div class="preloader-inner">
         <span class="dot"></span>
         <div class="dots">
-          <span>Domates</span>
-          <span>Patates</span>
-          <span>Soğan</span>
-          <section class="section" id="call-to-action">
+          <span>Domates
+<section class="section" id="call-to-action">
                   <div class="container">
                       <div class="row">
                           <div class="col-lg-10 offset-lg-1">
@@ -44,7 +42,10 @@
                           </div>
                       </div>
                   </div>
-              </section>
+              </section></span>
+          <span>Patates</span>
+          <span>Soğan</span>
+          
         </div>
       </div>
     </div>

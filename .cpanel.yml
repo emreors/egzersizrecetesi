@@ -5,7 +5,7 @@ deployment:
     - export CSSPATH=/home/u1936670/public_html/css
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp repositories/egzersizrecetesi_emrebaba/css/bootstrap.min.css $CSSPATH
+    - /bin/cp css/bootstrap.min.css $CSSPATH
     - /bin/cp fonts $DEPLOYPATH
     - /bin/cp images $DEPLOYPATH
     - /bin/cp js $DEPLOYPATH

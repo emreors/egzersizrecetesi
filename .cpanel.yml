@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/u1936670/public_html/
-    - /repositories/egzersizrecetesi -R images $DEPLOYPATH
+    - /repositories/egzersizrecetesi_emrebaba -R images $DEPLOYPATH

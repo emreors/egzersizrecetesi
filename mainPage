@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Omuz </h2>
+                        <h2>Nasıl Gelişeceğim? </h2>
                         <img src="images/line-dec.png" alt="waves">
                         <p>Egzersiz reçetesi şimdilik beleş</p>
                     </div>
@@ -81,8 +81,12 @@
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
                             <div class="right-content">
-                                <h4>Şişkoluktan bıktım, gelişmek istiyorum!</h4>
-                                <a href="mainPage" class="text-button">Nasıl yapacağım?</a>
+                                <h4>Omuz</h4>
+                                <a href="mainPage" class="text-button">Omuz</a>
+                            </div>
+                            <div class="right-content">
+                                <h4>Boyun</h4>
+                                <a href="mainPage" class="text-button">Boyun</a>
                             </div>
                         </li>
                     </ul>

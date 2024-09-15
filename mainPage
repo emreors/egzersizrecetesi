@@ -80,7 +80,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Boyun</h4>
                                 <a href="mainPage" class="text-button">Boyun</a>
                             </div>
@@ -89,7 +89,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Omuz</h4>
                                 <a href="mainPage" class="text-button">Omuz</a>
                             </div>
@@ -98,7 +98,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Üst Kol</h4>
                                 <a href="mainPage" class="text-button">Üst Kol</a>
                             </div>
@@ -107,7 +107,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Alt Kol</h4>
                                 <a href="mainPage" class="text-button">Alt Kol</a>
                             </div>
@@ -116,7 +116,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Sırt</h4>
                                 <a href="mainPage" class="text-button">Sırt</a>
                             </div>
@@ -125,7 +125,7 @@
                           <div class="centered-icon">
                                <img src="images/features-first-icon.png" alt="First One">
                           </div>
-                           <div class="right-content">
+                           <div class="centered-content">
                                <h4>Göğüs</h4>
                               <a href="mainPage" class="text-button">Göğüs</a>
                           </div>
@@ -134,7 +134,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Bel</h4>
                                 <a href="mainPage" class="text-button">Bel</a>
                             </div>
@@ -144,7 +144,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Kalça</h4>
                                 <a href="mainPage" class="text-button">Kalça</a>
                             </div>
@@ -154,7 +154,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Üst Bacak</h4>
                                 <a href="mainPage" class="text-button">Üst Bacak</a>
                             </div>
@@ -163,7 +163,7 @@
                             <div class="centered-icon">
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
-                            <div class="right-content">
+                            <div class="centered-content">
                                 <h4>Alt Bacak</h4>
                                 <a href="mainPage" class="text-button">Alt Bacak</a>
                             </div>

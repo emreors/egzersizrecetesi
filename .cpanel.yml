@@ -1,5 +1,6 @@
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/home/u1936670/public_html
- - /repositories/egzersizrecetesi/ index.html $DEPLOYPATH
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+   # - /bin/cp style.css $DEPLOYPATH

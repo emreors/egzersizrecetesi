@@ -30,6 +30,21 @@
           <span>Domates</span>
           <span>Patates</span>
           <span>Soğan</span>
+          <section class="section" id="call-to-action">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-10 offset-lg-1">
+                              <div class="cta-content">
+                                  <h2>Boşa<em> Düşünme</em>, bugün <em>başla!</em>!</h2>
+                                  <p>Ben Emre, bir şişko olarak Şişkolarla savaşa geldim :)</p>
+                                  <div class="main-button scroll-to-section">
+                                      <a href="#our-classes">Üye olmak ister misin?</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
         </div>
       </div>
     </div>

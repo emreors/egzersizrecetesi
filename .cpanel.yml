@@ -4,6 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/u1936670/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp assets/css/bootstrap.min.css $DEPLOYPATH
-    - /bin/cp assets/css/font-awesome.css $DEPLOYPATH
-    - /bin/cp assets/css/templatemo-training-studio.css $DEPLOYPATH
+    - /bin/cp assets $DEPLOYPATH

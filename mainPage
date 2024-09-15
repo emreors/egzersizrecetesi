@@ -80,7 +80,17 @@
     </section>
     <!-- ***** Call to Action End ***** -->
     
-   
+   <section class="section" id="bolge-secenekleri">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <h2>OMuz</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- ***** Footer Start ***** -->
     <footer>

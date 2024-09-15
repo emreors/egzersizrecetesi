@@ -62,6 +62,54 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/gym-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>Herşeyi öğren, kendin çalış!</h6>
+                <h2>Ben sana fit olamazsın <em>demedim :|</em></h2>
+                <div class="main-button scroll-to-section">
+                    <a href="#features">Üye olmak ister misin?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Features Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Çalışmaya <em>Başla!</em></h2>
+                        <img src="images/line-dec.png" alt="waves">
+                        <p>Egzersiz reçetesi şimdilik beleş</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Şişkoluktan bıktım, gelişmek istiyorum!</h4>
+                                <a href="mainPage" class="text-button">Nasıl yapacağım?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Item End ***** -->
+
     <!-- ***** Call to Action Start ***** -->
     <section class="section" id="call-to-action">
         <div class="container">
@@ -80,17 +128,7 @@
     </section>
     <!-- ***** Call to Action End ***** -->
     
-   <section class="section" id="bolge-secenekleri">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <h2>OMuz</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     
     <!-- ***** Footer Start ***** -->
     <footer>

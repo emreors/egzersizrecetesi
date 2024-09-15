@@ -84,6 +84,11 @@
                                 <h4>Omuz</h4>
                                 <a href="mainPage" class="text-button">Omuz</a>
                             </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
                             <div class="right-content">
                                 <h4>Boyun</h4>
                                 <a href="mainPage" class="text-button">Boyun</a>

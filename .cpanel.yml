@@ -4,4 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/u1936670/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp assets $DEPLOYPATH
+    - /bin/cp css $DEPLOYPATH
+    - /bin/cp fonts $DEPLOYPATH
+    - /bin/cp images $DEPLOYPATH
+    - /bin/cp js $DEPLOYPATH

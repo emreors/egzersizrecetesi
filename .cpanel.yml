@@ -3,9 +3,8 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/u1936670/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp README.md $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp /css.bootstrap.min.css $DEPLOYPATH
+    - /bin/cp css/bootstrap.min.css $DEPLOYPATH
     - /bin/cp fonts $DEPLOYPATH
     - /bin/cp images $DEPLOYPATH
     - /bin/cp js $DEPLOYPATH

@@ -63,24 +63,6 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-        <video autoplay muted loop id="bg-video">
-            <source src="images/gym-video.mp4" type="video/mp4" />
-        </video>
-
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h6>Herşeyi öğren, kendin çalış!</h6>
-                <h2>Ben sana fit olamazsın <em>demedim :|</em></h2>
-                <div class="main-button scroll-to-section">
-                    <a href="#features">Üye olmak ister misin?</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
-
     <!-- ***** Features Item Start ***** -->
     <section class="section" id="features">
         <div class="container">

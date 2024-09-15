@@ -81,6 +81,24 @@
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
                             <div class="right-content">
+                                <h4>Boyun</h4>
+                                <a href="mainPage" class="text-button">Boyun</a>
+                            </div>
+                        </li>
+                         <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Göğüs</h4>
+                                <a href="mainPage" class="text-button">Göğüs</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
                                 <h4>Omuz</h4>
                                 <a href="mainPage" class="text-button">Omuz</a>
                             </div>
@@ -90,10 +108,47 @@
                                 <img src="images/features-first-icon.png" alt="First One">
                             </div>
                             <div class="right-content">
-                                <h4>Boyun</h4>
-                                <a href="mainPage" class="text-button">Boyun</a>
+                                <h4>Bel</h4>
+                                <a href="mainPage" class="text-button">Bel</a>
                             </div>
                         </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Üst Kol</h4>
+                                <a href="mainPage" class="text-button">Üst Kol</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Kalça</h4>
+                                <a href="mainPage" class="text-button">Kalça</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Alt Kol</h4>
+                                <a href="mainPage" class="text-button">Alt Kol</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Üst Baca</h4>
+                                <a href="mainPage" class="text-button">Üst Baca</a>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>

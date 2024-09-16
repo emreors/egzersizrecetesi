@@ -153,8 +153,7 @@ body {
 
 .section-item {
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 80px;
 }
 
 .section-heading h2 {

@@ -186,7 +186,7 @@ body {
 .main-button a {
   display: inline-block;
   font-size: 15px;
-  padding: 12px 20px;
+  padding: 20px 20px;
   background-color: #ed563b;
   color: #fff;
   text-align: center;
@@ -200,6 +200,23 @@ body {
   background-color: #f9735b;
 }
 
+.alt-button a {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 20px 20px;
+  background-color: #ed563b;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all .3s;
+  border-radius: 5%
+}
+
+.alt-button a:hover {
+  background-color: #f9735b;
+}
 
 /* 
 ---------------------------------------------

@@ -682,6 +682,9 @@ features
 .feature-item .right-content {
   display: inline;
 }
+.feature-item .center-content {
+  display: center;
+}
 
 .feature-item .right-content h4 {
   margin-top: 0px;

@@ -679,7 +679,10 @@ features
   margin-right: 30px;
 }
 .feature-item .center-icon img {
-  float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .feature-item .right-content {

@@ -678,6 +678,9 @@ features
   float: left;
   margin-right: 30px;
 }
+.feature-item .center-icon img {
+  float: center;
+}
 
 .feature-item .right-content {
   display: inline;

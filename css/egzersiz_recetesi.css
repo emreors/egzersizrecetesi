@@ -737,6 +737,16 @@ features
   font-weight: 500;
 }
 
+#companents {
+  margin-bottom: 80px;
+}
+
+.companent-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
 /*
 ---------------------------------------------
 subscribe

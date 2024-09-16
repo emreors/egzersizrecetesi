@@ -204,9 +204,7 @@ body {
 }
 
 .alt-button a {
-  margin-top: 12px;
   display: inline-block;
-  font-size: 15px;
   padding: 20px 20px;
   background-color: #ed563b;
   color: #fff;
@@ -219,6 +217,27 @@ body {
 
 .alt-button a:hover {
   background-color: #f9735b;
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.main-alt-button a {
+  margin-top: 12px;
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #ed563b;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all .3s;
+  border-radius: 5%
+}
+
+.main-alt-button a:hover {
+  background-color: #f9735b;
+  color: #fff;
+  transform: scale(1.5);
 }
 
 /* 
@@ -698,6 +717,7 @@ features
 .feature-item {
   display: inline-block;
   margin-bottom: 60px;
+  margin-left: 2em;
 }
 
 .feature-item .left-icon img {

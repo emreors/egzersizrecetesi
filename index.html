@@ -1,154 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egzersiz Reçetesi</title>
+    <link rel="icon" href="images/favicon.ico" />
 
-    <meta charset="utf-8">
-    <link href="images/favicon.ico" rel="icon">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Egzersiz reçetesi</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/egzersiz_recetesi.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Özel Stil -->
+    <link href="css/egzersiz_recetesi.css" rel="stylesheet">
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
 
-<!-- ***** Preloader Start ***** -->
-<div class="js-preloader" id="js-preloader">
-    <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</div>
-<!-- ***** Preloader End ***** -->
-
-
-<!-- ***** Header Area Start ***** -->
+<!-- Header -->
 <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a class="logo" href="index.html" style="max-width: 80%;, height: 2em;, overflow: hidden;" >Egzersiz<em> Reçetesi</em></a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li class="scroll-to-section"><a class="active" href="#top">Anasayfa</a></li>
-                        <li class="scroll-to-section"><a href="#features">Hakkında</a></li>
-                        <li class="scroll-to-section"><a href="#top">İletişim</a></li>
-                        <li class="main-button"><a href="#top">Üye Ol</a></li>
-                    </ul>
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
+        <nav class="main-nav d-flex justify-content-between align-items-center py-3">
+            <a href="#top" class="logo">Egzersiz<em> Reçetesi</em></a>
+            <ul class="nav d-none d-md-flex gap-4 mb-0">
+                <li><a class="active" href="#top">Anasayfa</a></li>
+                <li><a href="#features">Hakkında</a></li>
+                <li><a href="#call-to-action">İletişim</a></li>
+                <li class="main-button"><a href="#">Üye Ol</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
-<!-- ***** Header Area End ***** -->
 
-<!-- ***** Main Banner Area Start ***** -->
+<!-- Main Banner -->
 <div class="main-banner" id="top">
-    <video autoplay id="bg-video" loop muted>
-        <source src="images/gym-video.mp4" type="video/mp4"/>
+    <video autoplay loop muted>
+        <source src="images/gym-video.mp4" type="video/mp4" />
     </video>
-
-    <div class="video-overlay header-text">
-        <div class="caption">
-            <h6>Herşeyi kendin öğren, kendin çalış!</h6>
-            <div class="section-heading">
-                <h2 style="font-size:5vw;">Türkiye'nin <em>vücut </em>geliştirme <em>Ansiklopedisi</em></h2>
-            </div>
-            <div class="main-alt-button scroll-to-section">
+    <div class="video-overlay">
+        <div>
+            <h6>Her şeyi kendin öğren, kendin çalış!</h6>
+            <h2>Türkiye'nin <em>Vücut</em> Geliştirme <em>Ansiklopedisi</em></h2>
+            <div class="main-button mt-4">
                 <a href="#features">Öğrenmeye Başla!</a>
             </div>
         </div>
     </div>
 </div>
-<!-- ***** Main Banner Area End ***** -->
 
-<!-- ***** Features Item Start ***** -->
+<!-- Features Section -->
 <section class="section" id="features">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading">
-                    <h2>Çalışmaya <em>Başla!</em></h2>
-                    <img alt="waves" src="images/line-dec.png">
-                    <p>Egzersiz reçetesi şimdilik beleş :)</p>
+        <div class="section-heading">
+            <h2>Çalışmaya <em>Başla!</em></h2>
+            <p class="text-secondary">Egzersiz reçetesi şimdilik beleş :)</p>
+        </div>
+
+        <div id="filter-bar" class="btn-group flex-wrap gap-2" role="group" aria-label="Filtre">
+            <button type="button" class="btn btn-primary filter-btn" data-filter="omuz-ustu">Omuz Üstü</button>
+            <button type="button" class="btn btn-primary filter-btn" data-filter="omuz-bel-arasi">Omuz–Bel Arası</button>
+            <button type="button" class="btn btn-primary filter-btn" data-filter="bel-alti">Bel Altı</button>
+            <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="all">Tümü</button>
+        </div>
+
+        <div class="row justify-content-center features-grid">
+            <div class="col-md-4">
+                <div class="feature-card" data-category="omuz-ustu" data-link="hareketler/omuz-ustu/index.html">
+                    <img src="images/tabs-first-icon.png" alt="Omuz Üstü">
+                    <h4>Omuz Üstü</h4>
+                    <p>Boyun, trapez ve daha fazlası.</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-item">
-                    <img alt="First One" src="images/features-first-icon.png">
-                    <div class="main-alt-button">
-                        <a href="mainPage.html">Gelişmek İstiyorum</a>
-                    </div>
+            <div class="col-md-4">
+                <div class="feature-card" data-category="omuz-bel-arasi" data-link="hareketler/omuz-bel-arasi/sirt.html">
+                    <img src="images/tabs-first-icon.png" alt="Omuz Bel Arası">
+                    <h4>Sırt</h4>
+                    <p>Barfiks, row ve deadlift varyasyonları.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card" data-category="bel-alti" data-link="hareketler/bel-alti/bacak.html">
+                    <img src="images/tabs-first-icon.png" alt="Bel Altı">
+                    <h4>Bacak</h4>
+                    <p>Squat, leg press, lunge hareketleri.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- ***** Features Item End ***** -->
 
-<!-- ***** Call to Action Start ***** -->
+<!-- Call to Action -->
 <section class="section" id="call-to-action">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="cta-content">
-                    <h2>Boş<em> yapma</em>, spor <em>yap!</em>!</h2>
-                    <p>Ben Emre, Şişkolarla savaşa geldim :)</p>
-                </div>
-            </div>
+        <div class="cta-content">
+            <h2>Boş <em>yapma</em>, spor <em>yap!</em></h2>
+            <p>Ben Emre, Şişkolarla savaşa geldim :)</p>
         </div>
     </div>
 </section>
-<!-- ***** Call to Action End ***** -->
 
-
-<!-- ***** Footer Start ***** -->
+<!-- Footer -->
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; 2024 Egzersiz Reçetesi by Emre Örs
-                </p>
-            </div>
+        <div class="social mb-3">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
         </div>
+        <p>© 2024 Egzersiz Reçetesi | by Emre Örs</p>
     </div>
 </footer>
 
-<!-- jQuery -->
-<script src="js/jquery-2.1.0.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugins -->
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/imgfix.min.js"></script>
-<script src="js/mixitup.js"></script>
-<script src="js/accordions.js"></script>
-
-<!-- Global Init -->
-<script src="js/custom.js"></script>
-
+<!-- JS Dosyaları -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

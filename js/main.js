@@ -1,64 +1,48 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('fade-in');
+document.addEventListener("DOMContentLoaded", () => {
+  // Sayfa açılışta fade-in
+  document.body.classList.add("fade-in");
 
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const featureCards = document.querySelectorAll('.feature-card');
+  // CTA ve footer görünür olsun (eğer varsa)
+  const cta = document.querySelector("#call-to-action");
+  if (cta) cta.classList.add("reveal");
 
-    // Sayfa geçiş animasyonu
-    featureCards.forEach(card => {
-        card.addEventListener('click', e => {
-            e.preventDefault();
-            document.body.classList.add('fade-out');
-            const target = card.dataset.link;
-            setTimeout(() => (window.location.href = target), 500);
-        });
+  const footer = document.querySelector("footer");
+  if (footer) footer.classList.add("reveal");
+
+  // === "Öğrenmeye Başla" Butonu (Anasayfa için) ===
+  const startBtn = document.getElementById("start-btn");
+  if (startBtn) {
+    startBtn.addEventListener("click", e => {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+      const target = startBtn.getAttribute("href");
+      setTimeout(() => {
+        window.location.href = target;
+      }, 600);
     });
+  }
 
-    // Filtreleme
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const filter = button.dataset.filter;
-            featureCards.forEach(card => {
-                card.style.opacity = 0;
-                setTimeout(() => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'block';
-                        setTimeout(() => (card.style.opacity = 1), 150);
-                    } else {
-                        card.style.display = 'none';
-                    }
-                }, 200);
-            });
-        });
+  // === Kartlara tıklanınca fade-out + yönlendirme (directory ve alt sayfalar) ===
+  document.querySelectorAll(".feature-card").forEach(card => {
+    card.addEventListener("click", e => {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+      const target = card.dataset.link;
+      setTimeout(() => {
+        window.location.href = target;
+      }, 500);
     });
+  });
 
-    // ScrollReveal animasyonları
-    ScrollReveal().reveal('.feature-card', {
-        delay: 200,
-        distance: '50px',
-        origin: 'bottom',
-        duration: 800,
-        easing: 'ease-out',
-        interval: 150
+  // === ScrollReveal Animasyonları ===
+  if (typeof ScrollReveal !== "undefined") {
+    ScrollReveal().reveal(".feature-card.large, #features, footer", {
+      delay: 100,
+      distance: "40px",
+      origin: "bottom",
+      duration: 900,
+      easing: "ease-out",
+      interval: 120
     });
-
-    ScrollReveal().reveal('#call-to-action', {
-        delay: 300,
-        distance: '0px',
-        opacity: 0,
-        scale: 0.9,
-        duration: 1000,
-        easing: 'ease-in-out'
-    });
-
-    ScrollReveal().reveal('footer', {
-        delay: 400,
-        distance: '30px',
-        origin: 'bottom',
-        duration: 900,
-        easing: 'ease-out'
-    });
+  }
 });

@@ -1,4 +1,4 @@
-/* ===== GENEL AYARLAR ===== */
+/* ===== Genel Ayarlar ===== */
 body {
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
@@ -17,7 +17,7 @@ body.fade-out {
   transition: opacity 0.6s ease-out;
 }
 
-/* ===== NAVBAR ===== */
+/* ===== Navbar ===== */
 .header-area {
   position: fixed;
   width: 100%;
@@ -41,13 +41,8 @@ body.fade-out {
   font-style: normal;
 }
 
-/* 🔧 Düzeltme: Nav yapısı boşluklu ve hizalı */
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem !important;
 }
 
 .nav li {
@@ -55,20 +50,20 @@ body.fade-out {
 }
 
 .nav li a {
-  color: #f5f5f5;
-  font-weight: 500;
-  transition: 0.3s;
-  display: inline-block;
-  padding: 6px 10px;
   text-decoration: none;
+  font-weight: 500;
+  color: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
 .nav li a:hover,
 .nav li a.active {
   color: #ff6600;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-/* Ana buton (Üye Ol vb.) */
 .main-button a {
   background: linear-gradient(90deg, #ff6600, #ff9500);
   color: #fff;
@@ -84,7 +79,21 @@ body.fade-out {
   box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
 }
 
-/* ===== BANNER ===== */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 1rem !important;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}
+
+/* ===== Banner ===== */
 .main-banner {
   position: relative;
   height: 100vh;
@@ -122,31 +131,7 @@ body.fade-out {
   font-weight: 700;
 }
 
-/* ===== FİLTRE BUTONLARI ===== */
-.filter-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-  background: linear-gradient(90deg, #ff6600, #ff9500);
-}
-
-/* ===== BÖLÜMLER ===== */
+/* ===== Bölüm (Section) ===== */
 .section {
   padding: 100px 0;
   text-align: center;
@@ -157,60 +142,16 @@ body.fade-out {
   font-style: normal;
 }
 
-/* ===== KARTLAR ===== */
-.feature-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 40px;
-  transition: 0.3s;
-  opacity: 0;
-  transform: translateY(50px);
-  cursor: pointer;
-}
-
-.feature-card.reveal {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 0.8s ease-out;
-}
-
-.feature-card img {
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-.feature-card h4 {
-  margin-bottom: 15px;
-  color: #ff9500;
-}
-
-/* ===== CALL TO ACTION ===== */
-#call-to-action {
-  background: linear-gradient(90deg, #ff6600, #ff9500);
-  color: #fff;
-  opacity: 0;
-  transform: scale(0.9);
-}
-
-#call-to-action.reveal {
-  opacity: 1;
-  transform: scale(1);
-  transition: 1s ease-in-out;
-}
-
-.cta-content h2 em {
-  color: #0f0f0f;
-  font-style: normal;
-}
-
-/* ===== FOOTER ===== */
+/* ===== Footer ===== */
 footer {
   padding: 40px 0;
   text-align: center;
   background: #0a0a0a;
+  color: #f5f5f5;
   opacity: 0;
   transform: translateY(30px);
+  position: relative;
+  z-index: 5;
 }
 
 footer.reveal {
@@ -230,7 +171,64 @@ footer .social a:hover {
   color: #fff;
 }
 
-/* ===== RESPONSIVE DÜZENLEMELER ===== */
+/* Tek satırlı iletişim satırı */
+.footer-contact {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.footer-contact i {
+  color: #ff9500;
+  margin: 0 6px 0 8px;
+}
+
+/* ==== Directory Kartları (Büyük Stil) ==== */
+.feature-card.large {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 40px 20px;
+  transition: all 0.4s ease;
+  text-align: center;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(40px);
+}
+
+.feature-card.large.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
+.feature-card.large img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.feature-card.large h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.feature-card.large:hover {
+  background: linear-gradient(90deg, #ff6600, #ff9500);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.4);
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .video-overlay h2 {
     font-size: 6vw;
@@ -241,15 +239,13 @@ footer .social a:hover {
     padding: 8px 20px;
   }
 
-  .feature-card {
-    padding: 20px;
+  .footer-contact p {
+    display: block;
+    white-space: normal;
   }
 
-  .nav {
-    gap: 14px; /* mobilde biraz daha sıkı hizalama */
-  }
-
-  .section {
-    padding: 70px 0;
+  .feature-card.large {
+    height: 180px;
+    padding: 30px 15px;
   }
 }

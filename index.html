@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Özel Stil -->
+    <!-- Global CSS -->
     <link href="css/egzersiz_recetesi.css" rel="stylesheet">
 
     <!-- ScrollReveal -->
@@ -23,13 +24,13 @@
 </head>
 
 <body>
-
 <!-- Header -->
 <header class="header-area header-sticky">
     <div class="container">
-        <nav class="main-nav d-flex justify-content-between align-items-center py-3">
+        <nav class="main-nav d-flex justify-content-between align-items-center py-3 flex-wrap">
             <a href="#top" class="logo">Egzersiz<em> Reçetesi</em></a>
-            <ul class="nav d-none d-md-flex gap-4 mb-0">
+
+            <ul class="nav d-flex flex-wrap justify-content-center align-items-center gap-3 mb-0 mt-3 mt-md-0">
                 <li><a class="active" href="#top">Anasayfa</a></li>
                 <li><a href="#features">Hakkında</a></li>
                 <li><a href="#call-to-action">İletişim</a></li>
@@ -39,7 +40,7 @@
     </div>
 </header>
 
-<!-- Main Banner -->
+<!-- Banner -->
 <div class="main-banner" id="top">
     <video autoplay loop muted>
         <source src="images/gym-video.mp4" type="video/mp4" />
@@ -49,54 +50,23 @@
             <h6>Her şeyi kendin öğren, kendin çalış!</h6>
             <h2>Türkiye'nin <em>Vücut</em> Geliştirme <em>Ansiklopedisi</em></h2>
             <div class="main-button mt-4">
-                <a href="#features">Öğrenmeye Başla!</a>
+                <a href="directory.html" id="start-btn">Öğrenmeye Başla!</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Features Section -->
+<!-- Features -->
 <section class="section" id="features">
     <div class="container">
         <div class="section-heading">
             <h2>Çalışmaya <em>Başla!</em></h2>
             <p class="text-secondary">Egzersiz reçetesi şimdilik beleş :)</p>
         </div>
-
-        <div id="filter-bar" class="btn-group flex-wrap gap-2" role="group" aria-label="Filtre">
-            <button type="button" class="btn btn-primary filter-btn" data-filter="omuz-ustu">Omuz Üstü</button>
-            <button type="button" class="btn btn-primary filter-btn" data-filter="omuz-bel-arasi">Omuz–Bel Arası</button>
-            <button type="button" class="btn btn-primary filter-btn" data-filter="bel-alti">Bel Altı</button>
-            <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="all">Tümü</button>
-        </div>
-
-        <div class="row justify-content-center features-grid">
-            <div class="col-md-4">
-                <div class="feature-card" data-category="omuz-ustu" data-link="hareketler/omuz-ustu/index.html">
-                    <img src="images/tabs-first-icon.png" alt="Omuz Üstü">
-                    <h4>Omuz Üstü</h4>
-                    <p>Boyun, trapez ve daha fazlası.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-card" data-category="omuz-bel-arasi" data-link="hareketler/omuz-bel-arasi/index.html">
-                    <img src="images/tabs-first-icon.png" alt="Omuz Bel Arası">
-                    <h4>Omuz Bel Arası</h4>
-                    <p>Barfiks, row ve deadlift varyasyonları.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-card" data-category="bel-alti" data-link="hareketler/bel-alti/index.html">
-                    <img src="images/tabs-first-icon.png" alt="Bel Altı">
-                    <h4>Bel Altı</h4>
-                    <p>Squat, leg press, lunge hareketleri.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
-<!-- Call to Action -->
+<!-- CTA -->
 <section class="section" id="call-to-action">
     <div class="container">
         <div class="cta-content">
@@ -110,15 +80,26 @@
 <footer>
     <div class="container">
         <div class="social mb-3">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:info@egzersizrecetesi.com"><i class="fa fa-envelope"></i></a>
+            <a href="tel:+905555555555"><i class="fa fa-phone"></i></a>
         </div>
-        <p>© 2024 Egzersiz Reçetesi | by Emre Örs</p>
+
+        <div class="footer-contact">
+            <p>
+                <i class="fa fa-envelope"></i> info@egzersizrecetesi.com |
+                <i class="fa fa-phone"></i> +90 555 555 55 55 |
+                <i class="fab fa-instagram"></i> @egzersizrecetesi |
+                <i class="fa fa-map-marker-alt"></i> Kadıköy, İstanbul
+            </p>
+        </div>
+
+        <p>© 2025 Egzersiz Reçetesi | by Emre Örs</p>
     </div>
 </footer>
 
-<!-- JS Dosyaları -->
+<!-- Global JS -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>

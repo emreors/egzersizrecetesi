@@ -1,4 +1,4 @@
-/* ===== Genel Ayarlar ===== */
+/* ===== GENEL AYARLAR ===== */
 body {
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
@@ -17,7 +17,7 @@ body.fade-out {
   transition: opacity 0.6s ease-out;
 }
 
-/* ===== Navbar ===== */
+/* ===== NAVBAR ===== */
 .header-area {
   position: fixed;
   width: 100%;
@@ -41,10 +41,26 @@ body.fade-out {
   font-style: normal;
 }
 
+/* 🔧 Düzeltme: Nav yapısı boşluklu ve hizalı */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
 .nav li a {
   color: #f5f5f5;
   font-weight: 500;
   transition: 0.3s;
+  display: inline-block;
+  padding: 6px 10px;
+  text-decoration: none;
 }
 
 .nav li a:hover,
@@ -52,6 +68,7 @@ body.fade-out {
   color: #ff6600;
 }
 
+/* Ana buton (Üye Ol vb.) */
 .main-button a {
   background: linear-gradient(90deg, #ff6600, #ff9500);
   color: #fff;
@@ -67,7 +84,7 @@ body.fade-out {
   box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
 }
 
-/* ===== Banner ===== */
+/* ===== BANNER ===== */
 .main-banner {
   position: relative;
   height: 100vh;
@@ -105,12 +122,13 @@ body.fade-out {
   font-weight: 700;
 }
 
-/* ===== Filtre Butonları ===== */
+/* ===== FİLTRE BUTONLARI ===== */
 .filter-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -128,7 +146,7 @@ body.fade-out {
   background: linear-gradient(90deg, #ff6600, #ff9500);
 }
 
-/* ===== Bölüm (Section) ===== */
+/* ===== BÖLÜMLER ===== */
 .section {
   padding: 100px 0;
   text-align: center;
@@ -139,7 +157,7 @@ body.fade-out {
   font-style: normal;
 }
 
-/* ===== Kartlar (Feature Cards) ===== */
+/* ===== KARTLAR ===== */
 .feature-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -167,7 +185,7 @@ body.fade-out {
   color: #ff9500;
 }
 
-/* ===== Call To Action ===== */
+/* ===== CALL TO ACTION ===== */
 #call-to-action {
   background: linear-gradient(90deg, #ff6600, #ff9500);
   color: #fff;
@@ -186,7 +204,7 @@ body.fade-out {
   font-style: normal;
 }
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 footer {
   padding: 40px 0;
   text-align: center;
@@ -212,7 +230,7 @@ footer .social a:hover {
   color: #fff;
 }
 
-/* ===== Responsive Düzeltmeler ===== */
+/* ===== RESPONSIVE DÜZENLEMELER ===== */
 @media (max-width: 768px) {
   .video-overlay h2 {
     font-size: 6vw;
@@ -225,5 +243,13 @@ footer .social a:hover {
 
   .feature-card {
     padding: 20px;
+  }
+
+  .nav {
+    gap: 14px; /* mobilde biraz daha sıkı hizalama */
+  }
+
+  .section {
+    padding: 70px 0;
   }
 }
